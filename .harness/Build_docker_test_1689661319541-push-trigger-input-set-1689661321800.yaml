@@ -1,0 +1,14 @@
+inputSet:
+  name: Build_docker_test_1689661319541-push-trigger-input-set
+  identifier: Build_docker_test_1689661319541pushtriggerinputset
+  orgIdentifier: default
+  projectIdentifier: default_project
+  pipeline:
+    identifier: Build_docker_test_1689661319541
+    properties:
+      ci:
+        codebase:
+          build:
+            type: branch
+            spec:
+              branch: <+trigger.branch>
