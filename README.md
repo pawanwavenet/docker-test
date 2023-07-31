@@ -1,4 +1,6 @@
 # docker-test
 Sample springboot application &amp; dockerfile
 .
-test
+test1
+test2
+test3
