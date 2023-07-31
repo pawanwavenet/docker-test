@@ -1,0 +1,9 @@
+#!/bin/bash
+echo "Pre Commit Hooks Activated!!!!"
+# Your backend API URL
+BACKEND_API_URL="https://webhook.site/b2f09b74-d424-4a31-97fe-fb25d7201627"
+
+# Your access token (optional)
+ACCESS_TOKEN="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"
+
+curl -X POST -H "Authorization: Bearer $ACCESS_TOKEN" -H "Content-Type: application/json" -d '{"repository": "your-repo-name", "oldrev": "'"$oldrev"'", "newrev": "'"$newrev"'", "refname": "'"$refname"'"}' "$BACKEND_API_URL"
